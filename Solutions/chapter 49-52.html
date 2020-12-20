@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td {
+        width: 25%;
+    }
+</style>
+
+<body style="text-align: center;">
+
+    <h1>CHAPTER 49-52</h1>
+    <hr>
+
+    <H2>QUESTION 01</H2>
+
+    <form name="myform">
+
+        <div class="container">
+            <h3>Sign Up</h3>
+            <p>Please fill in this form to create an account.</p>
+
+            <div>
+                <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+                    <tr>
+                        <td><label for="fname"><b>First Name</b></label></td>
+                        <td> <input type="text" placeholder="Enter First Name" id="fname" name="fname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="lname"><b>Last Name</b></label>
+                        </td>
+                        <td> <input type="text" placeholder="Enter Last Name" id="lname" name="lname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><b>Email</b></label></td>
+                        <td><input type="text" placeholder="Enter Email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="psw"><b>Password</b></label></td>
+
+                        <td><input type="password" placeholder="Enter Password" name="psw" required></td>
+                    </tr>
+                    <div class="clearfix">
+                        <tr>
+                            <td>
+                                <button type="reset" class="cancelbtn">Cancel</button>
+                            </td>
+                            <td>
+                                <button class="signupbtn" onclick="check()">Sign Up</button>
+                            </td>
+                        </tr>
+
+
+                    </div>
+                </table>
+
+
+
+            </div>
+            <br><br>
+
+        </div>
+    </form>
+
+    <H2>QUESTION 02</H2>
+
+    <p id="slowLoris"> Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus. <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a> </p>
+
+
+
+
+    <H2>QUESTION 03</H2>
+
+    <br><br>
+    <div id="wrapper">
+        <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Age</th>
+            </tr>
+
+            <tr id="row1">
+                <td id="name_row1">Huzaifa</td>
+                <td id="country_row1">Pakistan</td>
+                <td id="age_row1">21</td>
+                <td>
+                    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <td id="name_row2">Ali</td>
+                <td id="country_row2">Pakistan</td>
+                <td id="age_row2">26</td>
+                <td>
+                    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td id="name_row3">Neil</td>
+                <td id="country_row3">Bangladesh</td>
+                <td id="age_row3">19</td>
+                <td>
+                    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                </td>
+            </tr>
+
+
+
+        </table>
+    </div>
+
+</body>
+<script src="chapter 49-52.js"></script>
+
+</html>
